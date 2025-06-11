@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kirim Email Prank FF</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            padding: 40px;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        input, button {
+            width: 100%;
+            margin-top: 15px;
+            padding: 10px;
+            font-size: 14px;
+        }
+        button {
+            background-color: #c30000;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #a00000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Kirim Prank Email FF</h2>
+        <form action="/send-email" method="POST">
+            <input type="email" name="email" placeholder="Email Tujuan" required>
+            <input type="text" name="playerId" placeholder="ID Pemain" required>
+            <input type="text" name="subject" placeholder="Subjek Email" required>
+            <button type="submit">Kirim Email</button>
+        </form>
+    </div>
+</body>
+</html>
